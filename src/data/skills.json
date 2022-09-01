@@ -1,0 +1,57 @@
+{
+  "skills": [
+    {
+      "id": 0,
+      "skillName": "SEO",
+      "amount": "90"
+    },
+    {
+      "id": 0,
+      "skillName": "Яндекс Директ",
+      "amount": "85"
+    },
+    {
+      "id": 0,
+      "skillName": "Google Ads",
+      "amount": "80"
+    },
+    { "id": 3, "skillName": "Javascript", "amount": "70" },
+    {
+      "id": 1,
+      "skillName": "React.js",
+      "amount": "65"
+    },
+    {
+      "id": 1,
+      "skillName": "Redux",
+      "amount": "60"
+    },
+    {
+      "id": 1,
+      "skillName": "RTK",
+      "amount": "55"
+    },
+    {
+      "id": 1,
+      "skillName": "Git",
+      "amount": "75"
+    },
+    {
+      "id": 1,
+      "skillName": "PHP",
+      "amount": "45"
+    },
+    {
+      "id": 2,
+      "skillName": "Photoshop",
+      "amount": "80"
+    },
+    {
+      "id": 2,
+      "skillName": "Adobe Illustrator",
+      "amount": "50"
+    },
+    { "id": 6, "skillName": "Next", "amount": "45" },
+    { "id": 7, "skillName": "Gatsby", "amount": "50" }
+  ]
+}
