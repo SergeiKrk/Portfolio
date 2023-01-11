@@ -1,16 +1,15 @@
-import React from 'react'
-import './Contact.css'
-import Section from '../section/Section'
-import { Bounce } from 'react-reveal'
-import ContactForm from '../contactForm/ContactForm'
-import telegram from '../../images/social/telegram.png'
-import github from '../../images/social/github.png'
-import vk from '../../images/social/vk.png'
+import React from "react";
+import "./Contact.css";
+import Section from "../section/Section";
+import { Bounce } from "react-reveal";
+import telegram from "../../images/social/telegram.png";
+import github from "../../images/social/github.png";
+import vk from "../../images/social/vk.png";
 
 const Contact = () => {
   return (
     <Section title="Контакты">
-      <ContactForm />
+      {/* <ContactForm /> */}
       <Bounce cascade>
         <div className="links">
           <a
@@ -38,7 +37,7 @@ const Contact = () => {
         </div>
       </Bounce>
     </Section>
-  )
-}
+  );
+};
 
-export default Contact
+export default Contact;

@@ -1,22 +1,20 @@
-import React, { useState } from 'react'
-import './Home.css'
-import Fade from 'react-reveal/Fade'
-import { Bounce } from 'react-reveal'
-import { Link } from 'react-scroll'
-import Particles from 'react-particles-js'
-import Typewriter from 'typewriter-effect'
-import ArrowDropDownCircleIcon from '@material-ui/icons/ArrowDropDownCircle'
-import config from '../../config'
-import profile from '../../images/SK.jpg'
-import telegram from '../../images/social/telegram.png'
+import React, { useState } from "react";
+import "./Home.css";
+import Fade from "react-reveal/Fade";
+import { Bounce } from "react-reveal";
+import Particles from "react-particles-js";
+import Typewriter from "typewriter-effect";
+import config from "../../config";
+import profile from "../../images/SK.jpg";
+import telegram from "../../images/social/telegram.png";
 
 const Home = () => {
-  const [imageLoaded, setImageLoaded] = useState(false)
+  const [imageLoaded, setImageLoaded] = useState(false);
   return (
     <div className="home-wrapper">
       <div className="home">
         <Particles className="particles" params={config.particles} />
-        <div className={`greeting${!imageLoaded ? ' hide' : ''}`}>
+        <div className={`greeting${!imageLoaded ? " hide" : ""}`}>
           <Fade bottom distance="40px">
             <img
               className="profile"
@@ -25,7 +23,7 @@ const Home = () => {
               onLoad={() => setImageLoaded(true)}
             />
             <h1 className="greeting-text">
-              Привет, я <span className="name">Сергей Крюков</span>.{' '}
+              Привет, я <span className="name">Сергей Крюков</span>.{" "}
               <span className="wave-emoji" role="img" aria-label="waving hand">
                 👋
               </span>
@@ -34,14 +32,14 @@ const Home = () => {
               <Typewriter
                 options={{
                   strings: [
-                    'Мне нравится создавать классные web-приложения',
-                    'Я люблю изучать новые технологии.',
-                    'Я люблю знакомиться с новыми людьми.',
+                    "Мне нравится создавать классные web-приложения",
+                    "Я люблю изучать новые технологии.",
+                    "Я люблю знакомиться с новыми людьми.",
                   ],
                   autoStart: true,
                   loop: true,
                   deleteSpeed: 10,
-                  cursor: '<',
+                  cursor: "<",
                   delay: 100,
                 }}
               />
@@ -57,26 +55,11 @@ const Home = () => {
                 </a>
               </div>
             </Bounce>
-            <div className="scroll-down">
-              <Link
-                activeClass="active"
-                to="about"
-                spy={true}
-                smooth={true}
-                offset={-63}
-                duration={500}
-              >
-                <ArrowDropDownCircleIcon
-                  fontSize="large"
-                  style={{ pointerEvents: 'fill', cursor: 'pointer' }}
-                />
-              </Link>
-            </div>
           </Fade>
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

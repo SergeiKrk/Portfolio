@@ -1,10 +1,9 @@
-import React from 'react'
-import './About.css'
-import Typewriter from 'typewriter-effect'
-// import { Link } from 'react-scroll'
-import { Fade } from 'react-reveal'
-import Section from '../section/Section'
-import Skills from '../skills/Skills'
+import React from "react";
+import "./About.css";
+import Typewriter from "typewriter-effect";
+import { Fade } from "react-reveal";
+import Section from "../section/Section";
+import Skills from "../skills/Skills";
 
 const About = () => {
   return (
@@ -14,22 +13,22 @@ const About = () => {
           <div className="about-text">
             <h2>Кто я?</h2>
             <p>
-              Я Сергей{' '}
+              Я Сергей{" "}
               <span role="img" aria-label="lightning">
                 😄
-              </span>{' '}
+              </span>{" "}
             </p>
             <p>
               <span role="img" aria-label="lightning">
                 ⚡
-              </span>{' '}
+              </span>{" "}
               Я инженер-программист, специализирующийся на интерфейсах
               веб-приложениий.
             </p>
             <p>
               <span role="img" aria-label="lightning">
                 ⚡
-              </span>{' '}
+              </span>{" "}
               Вы можете застать меня за работой с JavaScript, React, Redux, Next
               и Gatsby, а так же Adobe Illustrator, Photoshop, Figma.
             </p>
@@ -37,19 +36,19 @@ const About = () => {
               <p className="typewriter-start">
                 <span role="img" aria-label="lightning">
                   ⚡
-                </span>{' '}
+                </span>{" "}
                 Я люблю
               </p>
               <Typewriter
                 options={{
                   strings: [
-                    'изучать новое',
-                    'статистику',
-                    'воплощать задуманное в жизнь',
-                    'справляться с задачами',
-                    'признавать и исправлять ошибки',
-                    'пробовать что-то новое',
-                    'сотрудничать с людьми',
+                    "изучать новое",
+                    "статистику",
+                    "воплощать задуманное в жизнь",
+                    "справляться с задачами",
+                    "признавать и исправлять ошибки",
+                    "пробовать что-то новое",
+                    "сотрудничать с людьми",
                   ],
                   autoStart: true,
                   loop: true,
@@ -57,6 +56,12 @@ const About = () => {
               />
               <p>.</p>
             </div>
+            <p>
+              <span role="img" aria-label="lightning">
+                ⚡
+              </span>{" "}
+              Люблю делать сайты и гнать на них трафик.
+            </p>
             <p>
               С 2008 я пытаюсь разобраться с тем, как работает интернет и
               реклама. Люблю читать книги по социальной психологии, экономике,
@@ -86,7 +91,7 @@ const About = () => {
         <Skills />
       </div>
     </Section>
-  )
-}
+  );
+};
 
-export default About
+export default About;
